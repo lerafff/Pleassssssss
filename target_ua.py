@@ -106,6 +106,5 @@ def results():
     (user_words, language, game_field, good_words)
 
 print("L")
-print("L")
 import doctest
 doctest.testmod()
