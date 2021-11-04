@@ -135,10 +135,3 @@ def results():
         result.write(str(logzni_words))
         result.write("\n")
         result.close()
-
-# generate_grid()
-
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
