@@ -135,5 +135,3 @@ def results():
         result.write(str(logzni_words))
         result.write("\n")
         result.close()
-
-print("lll")
