@@ -12,7 +12,7 @@ def generate_grid() -> List[List[str]]:
     letters =[]
     for i in range (65, 91):
         abc.append(chr(i))
-    for b in range(3):
+    for _ in range(3):
         letters.append(random.sample(abc,3))
     return letters
 
@@ -37,7 +37,7 @@ def get_words(file: str, string_1: List[str]) -> List[str]:
         file.readline()
         file.readline()
         for line in file:
-            line = line.lower() 
+            line = line.lower()
             line = line[:-1]
             not_add = False
             if len(line) >= 4 and string_1[4] in line:
@@ -55,15 +55,16 @@ def get_words(file: str, string_1: List[str]) -> List[str]:
                 else:
                     result_1.append(line)
     return result_1
- 
+
 def get_user_words() -> List[str]:
     """
     Gets words from user input and returns a list with these words.
     Usage: enter a word or press ctrl+d to finish.
     """
     return input().lower().split()
-        
-def get_pure_user_words(words_user: List[str], string_1: List[str], words_from_dict: List[str]) -> List[str]:
+
+def get_pure_user_words(words_user: List[str], string_1: \
+    List[str], words_from_dict: List[str]) -> List[str]:
     """
     (list, list, list) -> list
 
