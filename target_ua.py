@@ -106,3 +106,4 @@ def results():
     (user_words, language, game_field, good_words)
 
 print("hj")
+print("hj")
