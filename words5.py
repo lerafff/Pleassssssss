@@ -137,7 +137,7 @@ def results():
         result.close()
 
 # generate_grid()
-#print(results())
+
 
 if __name__ == '__main__':
     import doctest
