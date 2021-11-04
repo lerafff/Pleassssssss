@@ -104,5 +104,3 @@ def results():
     user_words = get_user_words()
     correct_words, missed_words = check_user_words\
     (user_words, language, game_field, good_words)
-
-print("hj")
